@@ -18,7 +18,6 @@ class DownloadTranslationsScript extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        var_dump('test');
         $download = new DownloadTranslations(new ConsoleLogger($output), new Config());
         $download->setForceDownloadTrlFiles(true);
         try {
