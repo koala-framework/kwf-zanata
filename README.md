@@ -9,3 +9,20 @@ It should look like this:
         "user": "yourUserName",
         "apiToken": "yourApiKey"
     }
+
+composer.json extra entry should look like this:
+
+    ...
+    "extra": {
+        "kwf-zanata": {
+            "project": "my-project",
+            "version": "2",
+            "docId": "resourceFile",
+            "restApiUrl": "https://translate.zanata.org/rest"
+        },
+        ...
+    },
+    ...
+
++ docId is the name of the uploaded translation-file.
++ Use restApiUrl to access custom deployed zanata instance
