@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+require 'vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Kwf\Zanata\DownloadTranslationsScript;
+
+$application = new Application('kwf-zanata', '0.1');
+$application->add(new DownloadTranslationsScript);
+$application->run();
