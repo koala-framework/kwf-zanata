@@ -104,7 +104,7 @@ class DownloadTranslations
         foreach ($locales as $locale) {
             $poFilePath = $trlTempDir.'/'.$locale->localeId.'.po';
             $this->_logger->notice("Downloading {$locale->localeId}");
-            $url = $extraData->restApiUrl."/file/translation/{$extraData->project}/{$extraData->version}/en/po?docId={$extraData->docId}";
+            $url = $extraData->restApiUrl."/file/translation/{$extraData->project}/{$extraData->version}/{$locale->localeId}/po?docId={$extraData->docId}";
             $this->_logger->info('Calling Url: '.$url);
             $file = $this->_downloadFile($url);
             if ($file === false) {
