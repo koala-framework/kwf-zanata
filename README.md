@@ -1,4 +1,4 @@
-To use lingohub you will need an api-token.
+To use zanta you will need a user and api-token.
 Please add it to a config file in your home directory:
 
     ~/.config/koala-framework/kwf-zanata/config
